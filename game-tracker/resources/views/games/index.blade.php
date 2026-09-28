@@ -69,7 +69,7 @@
                             <td class="p-4">
                                 <form action="{{ route('games.destroy', $game) }}" method="POST" onsubmit="return confirm('Remove this game?')">
                                     @csrf @method('DELETE')
-                                    <button type="submit" class="text-red-600 hover:text-red-900 text-sm">Delete</button>
+                                    <button type="submit" class="bg-red-600 hover:bg-red-700 text-sm text-white px-4 py-1 rounded">Delete</button>
                                 </form>
                             </td>
                         </tr>
